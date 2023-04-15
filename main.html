@@ -3,46 +3,47 @@
 <html>
 
 <head>
+	<title>Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<form method=POST>
+	<form method="POST">
 		<div>
 			<label for="name">Name*</label>
-			<input type="text" id="name" required>
-		</div>
+			<input type="text" name="name" required>
+		</div><br>
 		<div>
 			<label for="email">Email*</label>
-			<input type="email" id="email" required>
-		</div>
+			<input type="email" name="email" required>
+		</div><br>
 		<div>
 			<label for="gender" required>Gender*</label>
-			<input type="radio" id="gender_m">Male
-			<input type="radio" id="gender_f">Female
-		</div>
+			<input type="radio" name="gender">Male
+			<input type="radio" name="gender">Female
+		</div><br>
 		<div>
-			<label for="laptop" id="laptop">Laptop Brands</label>
+			<label for="laptop" name="laptop">Laptop Brands :</label>
 			<select>
 				<option>Apple</option>
 				<option>Asus</option>
 				<option>HP</option>
 			</select>
-		</div>
+		</div><br>
 		<div>
 			<label for="age">Age*</label>
-			<input type="number" id="age" required>
-		</div>
+			<input type="number" name="age" required maxlength="2">
+		</div><br>
 		<div>
 			<label for="dob">DOB*</label>
-			<input type="date" id="dob" required>
-		</div>
+			<input type="date" name="dob" required>
+		</div><br>
 		<div>
 			<label for="password">Password*</label>
-			<input type="password" id="password" required>
-		</div>
+			<input type="password" name="password" required>
+		</div><br>
 		<div>
-			<input type="submit" value="submit" id="submit">
+			<input type="submit" value="submit" name="submit">
 		</div>
 	</form>
 	<!-- the entire body must be written by student -->
